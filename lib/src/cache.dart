@@ -107,7 +107,7 @@ class FlutterpiBinaries extends ArtifactSet {
   final http.Client httpClient;
   final Logger logger;
   final ProcessManager processManager;
-  final gh.RepositorySlug repo = gh.RepositorySlug('ardera', 'flutter-pi');
+  final gh.RepositorySlug repo = gh.RepositorySlug('loreberti89', 'flutter-pi');
   final MyGithub github;
 
   Future<String?> _getLatestReleaseTag() async {
@@ -679,8 +679,10 @@ mixin FlutterpiCacheMixin on Cache implements FlutterpiCache {
         cipdBaseUrl,
         storageBaseUrl,
         'https://github.com/ardera/flutter-pi/',
+        'https://github.com/loreberti89/flutter-pi/',
         'https://github.com/ardera/flutter-ci/',
         'https://api.github.com/repos/ardera/flutter-pi/',
+        'https://api.github.com/repos/loreberti89/flutter-pi/',
         'https://api.github.com/repos/ardera/flutter-ci/',
       ];
 
